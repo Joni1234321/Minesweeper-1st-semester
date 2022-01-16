@@ -1,4 +1,4 @@
-Project made for course 02121 - Introduction to Software Technology https://kurser.dtu.dk/course/02121
+Project made for course 02121 - Introduction to Software Technology https://kurser.dtu.dk/course/02121  
 Made in a group of 4 during the 3 week period of January 2021
 
 Each file should credit the author
@@ -13,9 +13,9 @@ Additional features we added:
 - Gamemodes 
 - Multiplayer
 
-How to start game:
+How to start game:  
 You need to run Main.java under the runnables package
 
-How to start Multiplayer:
-You need to run Server.java under the runnables package (default port is 3000)
+How to start Multiplayer:  
+You need to run Server.java under the runnables package (default port is 3000)  
 Then you can start a client and join the server
