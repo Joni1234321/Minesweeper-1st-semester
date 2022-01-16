@@ -12,3 +12,10 @@ Project requirement made by the course:
 Additional features we added:
 - Gamemodes 
 - Multiplayer
+
+How to start game:
+You need to run Main.java under the runnables package
+
+How to start Multiplayer:
+You need to run Server.java under the runnables package (default port is 3000)
+Then you can start a client and join the server
