@@ -1,4 +1,4 @@
-Project made for course 02121 - Introduction to Software Technology https://kurser.dtu.dk/course/02148  
+Project made for course 02121 - Introduction to Software Technology https://kurser.dtu.dk/course/02121  
 Made in a group of 4 during the 3 week period of January 2021
 
 Each file should credit the author
