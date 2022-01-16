@@ -7,8 +7,8 @@ Each file should credit the author
 The project is made with JavaFX, so you need that to play the game! 
 
 ## Project requirement made by the course: 
-- JavaFX 
-- Working version of Minesweeper
+- Use JavaFX 
+- Final result must be a working version of Minesweeper
  
 ## Additional features we added:
 - Gamemodes 
