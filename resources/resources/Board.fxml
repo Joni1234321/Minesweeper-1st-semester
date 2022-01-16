@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.BoardController">
+  <children>
+    <MenuBar fx:id="boardMenuBar" VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#resetGameEvent" text="Reset">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="R" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+            <SeparatorMenuItem mnemonicParsing="false" />
+              <MenuItem mnemonicParsing="false" onAction="#saveGameEvent" text="Save">
+                  <accelerator>
+                      <KeyCodeCombination alt="UP" code="S" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                  </accelerator></MenuItem>
+              <MenuItem mnemonicParsing="false" onAction="#loadGameEvent" text="Load">
+                  <accelerator>
+                      <KeyCodeCombination alt="UP" code="L" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                  </accelerator></MenuItem>
+              <MenuItem mnemonicParsing="false" onAction="#highscoreEvent" text="Highscores">
+                  <accelerator>
+                      <KeyCodeCombination alt="UP" code="H" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                  </accelerator></MenuItem>
+              <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" onAction="#backToMenuEvent" text="Back to Menu">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="M" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+                  <MenuItem mnemonicParsing="false" onAction="#quitGameEvent" text="Quit">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="Q" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+      <AnchorPane VBox.vgrow="ALWAYS">
+         <children>
+            <ScrollPane fitToHeight="true" fitToWidth="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <content>
+                  <StackPane fx:id="boardStackPane">
+                     <children>
+                        <GridPane fx:id="boardGridPane" alignment="CENTER" hgap="3.0" vgap="3.0">
+
+                  </GridPane>
+                     </children>
+                  </StackPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+      <HBox alignment="CENTER" prefHeight="28.0" prefWidth="640.0">
+         <children>
+            <HBox prefWidth="125.0">
+               <children>
+                  <Region HBox.hgrow="ALWAYS" />
+                  <ImageView fx:id="clockImageGoesHere" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="timerLabel" maxHeight="1.7976931348623157E308" text="00:00" />
+               </children>
+            </HBox>
+            <Region prefWidth="150.0" />
+            <HBox prefWidth="125.0">
+               <children>
+                  <ImageView fx:id="remainingFlagImage" fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="remainingFlagLabel" maxHeight="1.7976931348623157E308" prefHeight="28.0" text="0/0" />
+                  <Region HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+  </children>
+</VBox>
