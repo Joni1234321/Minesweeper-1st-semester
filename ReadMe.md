@@ -2,7 +2,7 @@ Project made for course 02121 - Introduction to Software Technology https://kurs
 Made in a group of 4 during the 3 week period of January 2021
 
 Where are the files?  
-- All the files under the package dk.dtu.tanktrouble is made by us!
+- All the files under the package dk.dtu.tanktrouble are made by us!
 - The other files are required for jspace to work
 
 The project is made with JavaFX, so you need that to play the game! 
